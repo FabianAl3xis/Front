@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <link rel="stylesheet" href="/css/eventos.css">
+</head>
+<body>
+    <div class="headerContainer">
+        <iframe src="../components/header.html" frameborder="0" style="width: 100%; height: 110px;"></iframe>
+    </div>
+    <div class="container">
+        <div class="top">
+            <h1>Eventos</h1>
+            <button class="btnMisEventos" id="btnAbrirLogin">Mis eventos</button>
+        </div>
+        <hr style="background-color:#09004e; width: 95%; height: 1px; border-radius: 3px; margin: 0 auto">
+    </div>
+    <dialog class="dialog" id="modalLogin" >
+        <h1>Inicio de sesión</h1>
+        <form method="Login">
+            <div>
+                <label>Correo electrónico</label>
+                <input type="text"> 
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="password" >
+            </div>
+            <input type="submit" value="Inciar sesión">
+            <div>
+                <button>Crear nueva cuenta</button>
+            </div>
+            <div>
+                <button id="btnCerrarLogin">cerrar</button>
+            </div>
+        </form>
+    </dialog>
+    <script>
+        const btnAbrirLogin = 
+            document.getElementById("btnAbrirLogin");
+
+            const btnCerrarLogin =
+            document.getElementById("btnCerrarLogin");
+
+            const Login =
+            document.getElementById("modalLogin");
+
+            btnAbrirLogin.addEventListener("click", () =>{
+                Login.showModal();
+            });
+
+            Login.addEventListener("close", () => {
+                console.log("closed");
+            });
+    </script>
+</body> 
+</html>

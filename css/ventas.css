@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.headerContainer{
+    height: 110px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    padding-block-start: 5px;
+    padding-inline: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.top{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnMisVentas{
+    background-color: transparent;
+    border: none;
+    margin-inline-end: 30px;
+    color: rgb(2, 2, 147);
+    font-size: 15px;
+}
+
+.dialog {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.dialog h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.dialog form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
